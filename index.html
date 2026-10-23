@@ -4,7 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="light" />
-  <title>Doco Privacy &amp; Account Deletion</title>
+  <meta name="description" content="Doco privacy policy, data handling details, and account deletion instructions." />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:type" content="website" /><meta property="og:title" content="Doco Privacy Policy" /><meta property="og:description" content="How Doco handles account, camera, Gemini, Spotify and on-device information." />
+  <title>Doco Privacy Policy &amp; Account Deletion</title>
   <style>
     :root { color-scheme: light; font-family: Inter, ui-sans-serif, system-ui, sans-serif; color: #07113f; background: #fff8df; }
     * { box-sizing: border-box; }
@@ -17,12 +20,14 @@
     .meta { margin: 0 0 38px; color: #666a7d; }
     .action { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; margin-top: 8px; padding: 12px 20px; border-radius: 999px; color: white; background: #07113f; text-decoration: none; }
     .card { margin-top: 18px; padding: 22px; border: 1px solid rgba(7,17,63,.16); border-radius: 20px; background: rgba(255,255,255,.58); }
+    .legal-nav { display: flex; flex-wrap: wrap; gap: 18px; margin: 0 0 38px; }
   </style>
 </head>
 <body>
   <main>
     <h1>Doco privacy</h1>
-    <p class="meta">Last updated: September 15, 2026</p>
+    <p class="meta">Last updated: September 22, 2026</p>
+    <nav class="legal-nav" aria-label="Legal"><a href="./" aria-current="page">Privacy</a><a href="terms.html">Terms &amp; Conditions</a></nav>
 
     <p>Doco is an expressive Android companion by Vatsal Upadhyay. Doco does not sell personal data, show advertising, or use advertising trackers.</p>
 
@@ -31,6 +36,7 @@
       <li><strong>Google account:</strong> Google sign-in is optional. If used, Doco receives and stores your Google account identifier, name, email address, profile image and session information through Supabase so that it can identify your Doco account and restore account preferences.</li>
       <li><strong>Camera and Gemini:</strong> Camera access is optional and requires your permission. When enabled with a Gemini API key, selected camera frames are sent to Google Gemini to produce an immediate reaction. Doco does not persist camera frames. Your Gemini API key is encrypted in secure storage on your device.</li>
       <li><strong>Spotify:</strong> Spotify connection is optional. Doco uses Spotify OAuth credentials and account, library, playlist, playback-device and track information to provide playback controls and music suggestions. Connection credentials are encrypted and retained only while the connection is active.</li>
+      <li><strong>Desktop visits:</strong> If you pair Doco Desktop, Doco uses your account identifier, an expiring pairing code, device identifier, connection status and local-network connection information to connect your phone and PC. Pairing can be disconnected from the app.</li>
       <li><strong>On-device information:</strong> Doco stores preferences, onboarding completion, companion mode, queue information and limited interaction history on your device.</li>
     </ul>
 
@@ -40,12 +46,16 @@
     <h2>Service providers</h2>
     <p>Doco uses Google and Supabase for optional authentication and account storage, Google Gemini for optional AI reactions, and Spotify for optional music integration. Those services process information under their own privacy terms.</p>
 
+    <h2>Website analytics and cookies</h2>
+    <p>The Doco product website does not load optional analytics unless an analytics property is configured and you choose Accept. If enabled, your choice is stored on your device and anonymous page-use information may be processed by the configured analytics provider. Choosing No thanks keeps optional analytics off. Essential app session cookies are used only when required for sign-in and connected features.</p>
+
     <h2>Retention</h2>
     <p>Account and preference records are retained while your Doco account exists. OAuth connections are retained until you disconnect them or delete your Doco account. Camera frames are not retained by Doco. On-device information remains until you clear the app's data or uninstall it. Support correspondence related to a deletion request may be retained for up to 90 days for security and fulfillment records.</p>
 
     <h2 id="delete-account">Delete your Doco account</h2>
     <div class="card">
-      <p>To request deletion, email us from the same Google address used for Doco. Use the subject <strong>Doco account deletion request</strong>. We will verify the request and delete the associated Doco profile, account sessions, synced preferences and stored Spotify connection within 30 days.</p>
+      <p>You can permanently delete your account inside Doco: open <strong>Profile → Account → Delete account</strong>, then confirm. Doco deletes the associated profile, account sessions, synced preferences and stored Spotify connection.</p>
+      <p>If you cannot access the app, email us from the same Google address used for Doco with the subject <strong>Doco account deletion request</strong>. We will verify and complete the request within 30 days.</p>
       <p>Deleting your Doco account does not delete your Google or Spotify account. You can separately revoke Doco's access in those providers. Clear Doco's app data or uninstall the app to remove information stored only on your device.</p>
       <a class="action" href="mailto:vatsal.upadhyay20@gmail.com?subject=Doco%20account%20deletion%20request">Request account deletion</a>
     </div>
